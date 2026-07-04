@@ -23,16 +23,8 @@ An interactive JSON utility built with vanilla JavaScript that allows users to v
 
 ## 🚀 Live Demo
 
-**Live:** 
+**Live:** https://johnyisbackk.github.io/js-json-explorer/
 
-## 📁 Project Structure
-
-```text
-├── index.html
-├── style.css
-├── script.js
-└── assets/
-```
 
 ## 🎯 What I Practiced
 
