@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>JSON Explorer PRO</title>
+  </head>
+  <body>
+    <main class="json-app">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Developer Tool</p>
+          <h1>JSON Explorer PRO</h1>
+          <span
+            >Format, validate and explore JSON data in a clean visual
+            interface.</span
+          >
+        </div>
+
+        <div class="status-card" id="statusCard">
+          <strong id="statusText">Ready</strong>
+          <span id="statusDetails">Paste JSON to begin</span>
+        </div>
+      </header>
+
+      <section class="toolbar">
+        <button id="formatBtn">Format</button>
+        <button id="minifyBtn">Minify</button>
+        <button id="visualizeBtn" class="primary-btn">Visualize</button>
+        <button id="copyBtn">Copy Output</button>
+        <button id="clearBtn" class="danger-btn">Clear</button>
+      </section>
+
+      <section class="workspace">
+        <article class="editor-panel">
+          <div class="panel-header">
+            <div>
+              <p>Input</p>
+              <h2>Raw JSON</h2>
+            </div>
+            <span id="inputSize">0 chars</span>
+          </div>
+
+          <textarea
+            id="jsonInput"
+            spellcheck="false"
+            placeholder="Paste JSON here..."
+          ></textarea>
+        </article>
+
+        <article class="editor-panel">
+          <div class="panel-header">
+            <div>
+              <p>Output</p>
+              <h2>Formatted JSON</h2>
+            </div>
+            <span id="outputSize">0 chars</span>
+          </div>
+
+          <pre id="jsonOutput" class="json-output">
+Output will appear here.</pre
+          >
+        </article>
+      </section>
+
+      <section class="visual-panel">
+        <div class="panel-header">
+          <div>
+            <p>Visual Preview</p>
+            <h2>JSON Cards</h2>
+          </div>
+          <span id="nodeCount">0 nodes</span>
+        </div>
+
+        <div id="visualOutput" class="visual-output">
+          <div class="empty-state">
+            <h3>No data yet</h3>
+            <p>Paste valid JSON and click Visualize.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
